@@ -7,22 +7,24 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background: url('https://github.com/Tanishqua-Sharma/Tanishqua-Sharma.github.io/blob/main/bg.jpg') no-repeat center center fixed;
+            background: url('bg.jpg') no-repeat center center fixed;
             background-size: cover;
-            color: white;
+            color: #333;
             font-family: 'Arial', sans-serif;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
             padding: 50px;
-            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+            background-color: rgba(255, 255, 255, 0.85); /* Light background for readability */
             border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
         }
         .profile-img {
             width: 150px;
             border-radius: 50%;
             margin-bottom: 20px;
+            border: 3px solid #007bff;
         }
         .btn-custom {
             margin: 10px;
@@ -30,32 +32,38 @@
         }
         .card {
             margin: 10px;
-            background-color: rgba(0, 0, 0, 0.5); /* Dark background for cards */
-            color: white;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.9);
         }
         .card .card-title {
-            color: #f8f9fa;
+            color: #007bff;
+            font-weight: bold;
         }
         .card-body {
             text-align: center;
         }
         h1 {
-            color: #f8f9fa;
+            color: #007bff;
             font-weight: bold;
         }
         h2 {
-            color: #f8f9fa;
+            color: #0056b3;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1 class="text-primary">Tanishqua Sharma</h1>
+    <div class="container text-center">
+        <h1>Tanishaqua Sharma</h1>
         <p class="lead">Bioinformatics Enthusiast | Computational Biologist | Pipeline Builder</p>
-        
-        <a href="https://github.com/Tanishqua-Sharma" class="btn btn-dark btn-custom">GitHub</a>
-        <a href="https://www.linkedin.com/in/your-link" class="btn btn-primary btn-custom">LinkedIn</a>
-        
+
+        <img src="profile.jpg" alt="Profile Picture" class="profile-img"> <!-- Add your profile image -->
+
+        <div>
+            <a href="https://github.com/Tanishaqua-Sharma" class="btn btn-dark btn-custom">GitHub</a>
+            <a href="https://www.linkedin.com/in/your-link" class="btn btn-primary btn-custom">LinkedIn</a>
+        </div>
+
         <h2 class="mt-4">Projects</h2>
         <div class="row">
             <div class="col-md-6">
@@ -63,7 +71,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Molecular Docking Workflow</h5>
                         <p class="card-text">Automated docking studies using KNIME.</p>
-                        <a href="https://github.com/your-project" class="btn btn-outline-light">View</a>
+                        <a href="https://github.com/your-project" class="btn btn-outline-primary">View</a>
                     </div>
                 </div>
             </div>
@@ -72,7 +80,7 @@
                     <div class="card-body">
                         <h5 class="card-title">AI for Drug Discovery</h5>
                         <p class="card-text">Machine learning models to predict drug interactions.</p>
-                        <a href="https://github.com/your-project" class="btn btn-outline-light">View</a>
+                        <a href="https://github.com/your-project" class="btn btn-outline-primary">View</a>
                     </div>
                 </div>
             </div>
@@ -80,3 +88,4 @@
     </div>
 </body>
 </html>
+
