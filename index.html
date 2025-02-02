@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background: url('bg.jpg') no-repeat center center fixed;
+            background: url('https://source.unsplash.com/1600x900/?technology,abstract') no-repeat center center fixed;
             background-size: cover;
             color: #333;
             font-family: 'Arial', sans-serif;
@@ -16,7 +16,7 @@
             max-width: 900px;
             margin: auto;
             padding: 50px;
-            background-color: rgba(255, 255, 255, 0.85); /* Light background for readability */
+            background-color: rgba(255, 255, 255, 0.9);
             border-radius: 10px;
             box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
         }
@@ -29,11 +29,13 @@
         .btn-custom {
             margin: 10px;
             padding: 10px 20px;
+            font-weight: bold;
         }
         .card {
             margin: 10px;
             border: none;
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
         .card .card-title {
             color: #007bff;
@@ -42,11 +44,7 @@
         .card-body {
             text-align: center;
         }
-        h1 {
-            color: #007bff;
-            font-weight: bold;
-        }
-        h2 {
+        h1, h2 {
             color: #0056b3;
             font-weight: bold;
         }
@@ -56,30 +54,36 @@
     <div class="container text-center">
         <h1>Tanishaqua Sharma</h1>
         <p class="lead">Bioinformatics Enthusiast | Computational Biologist | Pipeline Builder</p>
-
-        <img src="profile.jpg" alt="Profile Picture" class="profile-img"> <!-- Add your profile image -->
-
+        <img src="profile.jpg" alt="Profile Picture" class="profile-img">
         <div>
             <a href="https://github.com/Tanishaqua-Sharma" class="btn btn-dark btn-custom">GitHub</a>
             <a href="https://www.linkedin.com/in/your-link" class="btn btn-primary btn-custom">LinkedIn</a>
         </div>
-
         <h2 class="mt-4">Projects</h2>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Molecular Docking Workflow</h5>
+                        <h5 class="card-title">KNIME Workflow</h5>
                         <p class="card-text">Automated docking studies using KNIME.</p>
                         <a href="https://github.com/your-project" class="btn btn-outline-primary">View</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">AI for Drug Discovery</h5>
+                        <h5 class="card-title">Machine Learning Project</h5>
                         <p class="card-text">Machine learning models to predict drug interactions.</p>
+                        <a href="https://github.com/your-project" class="btn btn-outline-primary">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Computational Analysis</h5>
+                        <p class="card-text">Computational approaches for bioinformatics research.</p>
                         <a href="https://github.com/your-project" class="btn btn-outline-primary">View</a>
                     </div>
                 </div>
@@ -88,4 +92,5 @@
     </div>
 </body>
 </html>
+
 
