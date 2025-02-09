@@ -1,91 +1,71 @@
-/* General Styling */
-body {
-    background-color: #f8f9fa;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-/* Navbar Styling */
-.navbar {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 15px 20px;
-    border-bottom: 2px solid #FF6B6B;
-}
-
-.navbar a {
-    color: white;
-    margin: 0 15px;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    transition: 0.3s;
-    text-decoration: none;
-}
-
-.navbar a:hover {
-    color: #FF6B6B;
-    transform: scale(1.1);
-}
-
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 80px 20px;
-    background: linear-gradient(135deg, #1E2A78, #5E60CE);
-    color: white;
-    border-radius: 10px;
-    animation: fadeIn 1s ease-in-out;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    opacity: 0.9;
-}
-
-.hero button {
-    background-color: #FF6B6B;
-    border: none;
-    padding: 12px 24px;
-    font-size: 1.1rem;
-    border-radius: 30px;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.hero button:hover {
-    background-color: #FF4D4D;
-    transform: scale(1.05);
-}
-
-/* Profile Picture */
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid white;
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
-    margin-bottom: 15px;
-}
-
-/* Card Layout */
-.card {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-/* Fade-in Animation */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanishaqua's Portfolio</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://source.unsplash.com/1600x900/?bioinformatics,computational') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sidebar h2 {
+            color: #4CAF50;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+        .sidebar a:hover {
+            background: #4CAF50;
+        }
+        .content {
+            margin-left: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Portfolio</h2>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="content">
+        <img src="profile.jpg" alt="Tanishaqua" class="profile-img">
+        <h1>Hi, I'm Tanishaqua Sharma</h1>
+        <p>Bioinformatics enthusiast currently interning at CSIR - IGIB.</p>
+        <a href="#projects" style="color: #4CAF50; font-weight: bold; text-decoration: none;">View Projects</a>
+    </div>
+</body>
+</html>
