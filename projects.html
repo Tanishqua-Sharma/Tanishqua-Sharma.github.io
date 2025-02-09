@@ -1,21 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>My Projects</h1>
-        <nav><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="contact.html">Contact</a></nav>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About</a> | 
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
+
     <section>
         <h2>Project Highlights</h2>
-        <ul>
-            <li>KNIME Workflow for Molecular Docking</li>
-            <li>HPV E7 Drug Discovery</li>
-            <li>Machine Learning for Protein Geometry</li>
-        </ul>
+
+        <div class="project-section">
+            <h3>KNIME Workflow</h3>
+            <p>Developed an automated workflow for molecular docking.</p>
+            <button onclick="window.location.href='knime.html'">
+                🧬 View Project Details
+            </button>
+        </div>
+
+        <div class="project-section">
+            <h3>HPV E7 Drug Discovery</h3>
+            <p>Exploring computational methods for targeting HPV E7 protein.</p>
+        </div>
+
+        <div class="project-section">
+            <h3>Machine Learning for Protein Geometry</h3>
+            <p>Applied ML techniques to analyze protein structure.</p>
+            <button onclick="window.open('https://scholar.google.com', '_blank')">
+                📖 View Chapter on Google Scholar
+            </button>
+        </div>
     </section>
 </body>
 </html>
